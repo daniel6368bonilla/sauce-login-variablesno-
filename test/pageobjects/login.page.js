@@ -8,6 +8,9 @@ class LoginPage extends Page {
     /**
      * define selectors using getter methods
      */
+    username= 'standard_user';
+    password= 'secret_sauce';
+    
     get inputUsername () {
         return $('#user-name');
     }
