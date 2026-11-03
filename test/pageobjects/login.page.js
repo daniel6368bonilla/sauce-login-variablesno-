@@ -8,7 +8,7 @@ class LoginPage extends Page {
     /**
      * define selectors using getter methods
      */
-    username= 'standard_user';
+    users= ['standard_user','problem_user', 'error_user','visual_user']
     password= 'secret_sauce';
     
     get inputUsername () {
