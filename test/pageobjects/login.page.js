@@ -10,7 +10,8 @@ class LoginPage extends Page {
      */
     credentials= {
     users: ['standard_user','problem_user', 'error_user','visual_user'],
-    password:'secret_sauce'}
+    password:'secret_sauce',
+    wrongPassword: '123'}
     
     get inputUsername () {
         return $('#user-name');

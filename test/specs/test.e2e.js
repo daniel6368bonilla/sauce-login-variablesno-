@@ -11,5 +11,12 @@ describe('SauceDemo Login Test', () => {
         await expect(browser).toHaveUrl('https://www.saucedemo.com/inventory.html')
         }
     })
+    it('should not login with invalid credentials', async() => {
+    for (let i=0; i< LoginPage.credentials.users.length; i++) {
+        await LoginPage.open()
+        await LoginPage.login(LoginPage.credentials.users[i], LoginPage.credentials.wrongPassword)
+        await expect($('[data-test="error"]')).toBeDisplayed()
+    }
+ })
 })
 
