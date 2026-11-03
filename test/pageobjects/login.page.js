@@ -8,8 +8,9 @@ class LoginPage extends Page {
     /**
      * define selectors using getter methods
      */
-    users= ['standard_user','problem_user', 'error_user','visual_user']
-    password= 'secret_sauce';
+    credentials= {
+    users: ['standard_user','problem_user', 'error_user','visual_user'],
+    password:'secret_sauce'}
     
     get inputUsername () {
         return $('#user-name');
