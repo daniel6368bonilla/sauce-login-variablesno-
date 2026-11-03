@@ -1,6 +1,6 @@
 import { browser, expect } from '@wdio/globals'
 import LoginPage from '../pageobjects/login.page.js'
-import loginPage from '../pageobjects/login.page.js'
+
 
 
 describe('SauceDemo Login Test', () => {
